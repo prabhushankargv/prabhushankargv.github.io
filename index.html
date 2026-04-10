@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prabhu Shankar | Data Scientist</title>
+  <meta name="description" content="Portfolio of Prabhu Shankar. Data Scientist specializing in marketing analytics, A/B experimentation, GenAI, and ML pipelines across AWS, Snowflake, and Databricks." />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+    }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #020617; }
+    ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #6366f1; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <div class="min-h-screen flex flex-col" id="app">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4 lg:px-0">
+        <a href="#top" class="flex items-center gap-3" data-scroll>
+          <div class="leading-tight">
+            <p class="text-sm font-semibold tracking-tight text-slate-50">Prabhu Shankar</p>
+            <p class="text-xs text-slate-400">Data Scientist</p>
+          </div>
+        </a>
+        <nav class="hidden items-center gap-6 text-xs font-medium text-slate-300 md:flex">
+          <a href="#about" data-nav-link data-scroll class="relative px-1.5 py-1 text-slate-300 transition-colors hover:text-indigo-400">About</a>
+          <a href="#skills" data-nav-link data-scroll class="relative px-1.5 py-1 text-slate-300 transition-colors hover:text-indigo-400">Skills</a>
+          <a href="#experience" data-nav-link data-scroll class="relative px-1.5 py-1 text-slate-300 transition-colors hover:text-indigo-400">Experience</a>
+          <a href="#projects" data-nav-link data-scroll class="relative px-1.5 py-1 text-slate-300 transition-colors hover:text-indigo-400">Projects</a>
+          <a href="#contact" data-nav-link data-scroll class="relative px-1.5 py-1 text-slate-300 transition-colors hover:text-indigo-400">Contact</a>
+        </nav>
+        <button id="mobileNavToggle" class="inline-flex items-center justify-center rounded-lg border border-slate-700 bg-slate-900/60 px-2.5 py-1.5 text-xs font-medium text-slate-200 shadow-sm transition hover:border-indigo-500 hover:text-indigo-300 md:hidden" type="button" aria-label="Toggle navigation">
+          <span class="mr-1 h-[1px] w-4 bg-current"></span>
+          <span class="mr-1 h-[1px] w-4 bg-current"></span>
+          <span class="h-[1px] w-4 bg-current"></span>
+        </button>
+      </div>
+      <div id="mobileNav" class="hidden border-t border-slate-800 bg-slate-950/95 px-4 pb-4 pt-2 text-sm text-slate-300 md:hidden">
+        <nav class="flex flex-col gap-1.5">
+          <a href="#about" data-nav-link data-scroll class="rounded-lg px-2 py-1.5 transition hover:bg-slate-900 hover:text-indigo-300">About</a>
+          <a href="#skills" data-nav-link data-scroll class="rounded-lg px-2 py-1.5 transition hover:bg-slate-900 hover:text-indigo-300">Skills</a>
+          <a href="#experience" data-nav-link data-scroll class="rounded-lg px-2 py-1.5 transition hover:bg-slate-900 hover:text-indigo-300">Experience</a>
+          <a href="#projects" data-nav-link data-scroll class="rounded-lg px-2 py-1.5 transition hover:bg-slate-900 hover:text-indigo-300">Projects</a>
+          <a href="#contact" data-nav-link data-scroll class="rounded-lg px-2 py-1.5 transition hover:bg-slate-900 hover:text-indigo-300">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <!-- Hero -->
+      <section id="top" class="relative overflow-hidden border-b border-slate-900/80 bg-gradient-to-b from-slate-950 to-slate-950">
+        <div class="pointer-events-none absolute inset-x-0 top-[-18rem] -z-10 transform-gpu overflow-hidden blur-3xl">
+          <div class="relative left-1/2 aspect-[1108/632] w-[72rem] -translate-x-1/2 bg-[radial-gradient(circle_at_top,_rgba(99,102,241,0.5),_transparent_55%),radial-gradient(circle_at_bottom,_rgba(56,189,248,0.4),_transparent_55%)] opacity-60"></div>
+        </div>
+        <div class="mx-auto grid max-w-6xl gap-12 px-4 py-16 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:py-20 lg:px-0 lg:py-24">
+          <div>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-indigo-400">Marketing Analytics • A/B Experimentation • GenAI</p>
+            <h1 class="mt-4 text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl md:text-5xl md:leading-tight">Prabhu Shankar</h1>
+            <p class="mt-3 text-base text-slate-300 sm:text-lg">
+              Data Scientist &amp;
+              <span id="roleTyping" class="border-r border-indigo-400 pr-1 font-semibold text-indigo-400"></span>
+            </p>
+            <p class="mt-4 max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base">
+              4+ years building marketing analytics systems, experimentation frameworks, and GenAI-powered pipelines. Focused on campaign optimization, customer segmentation, A/B testing at scale, and LLM-assisted analytics at Goldman Sachs and beyond.
+            </p>
+            <div class="mt-6 flex flex-wrap items-center gap-3 text-[11px] text-slate-300">
+              <span class="inline-flex items-center gap-1 rounded-full border border-indigo-500/40 bg-indigo-500/10 px-3 py-1 font-medium text-indigo-300 shadow-[0_0_0_1px_rgba(99,102,241,0.4)]">Python · Scikit-learn · XGBoost · LangChain</span>
+              <span class="inline-flex items-center gap-1 rounded-full border border-sky-500/40 bg-sky-500/10 px-3 py-1 font-medium text-sky-300">Snowflake · Spark · Airflow · A/B Testing</span>
+              <span class="inline-flex items-center gap-1 rounded-full border border-slate-600 bg-slate-900/80 px-3 py-1 font-medium text-slate-200">Open to Remote &amp; Contract</span>
+            </div>
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a href="#experience" data-scroll class="inline-flex items-center justify-center rounded-xl bg-indigo-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-indigo-500/40 transition hover:bg-indigo-400">View Experience</a>
+              <a href="#skills" data-scroll class="inline-flex items-center justify-center rounded-xl border border-slate-700 bg-slate-900/60 px-4 py-2 text-sm font-medium text-slate-100 shadow-sm transition hover:border-indigo-500 hover:text-indigo-300">Explore Skills</a>
+              <a href="resume.pdf" target="_blank" class="inline-flex items-center justify-center rounded-xl border border-slate-700 bg-slate-900/60 px-4 py-2 text-sm font-medium text-slate-100 shadow-sm transition hover:border-indigo-500 hover:text-indigo-300">View Resume ↗</a>
+              <a href="mailto:prabhu.shankar.ps05@gmail.com" class="inline-flex items-center justify-center rounded-xl border border-slate-700 bg-slate-900/60 px-4 py-2 text-sm font-medium text-slate-100 shadow-sm transition hover:border-indigo-500 hover:text-indigo-300">Contact Me</a>
+            </div>
+          </div>
+
+          <aside class="relative md:justify-self-end">
+            <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-indigo-500/10 blur-3xl filter" aria-hidden="true"></div>
+            <div class="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/70 p-5 shadow-[0_18px_45px_rgba(15,23,42,0.9)]">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400">Quick Profile</p>
+              <p class="mt-2 text-sm font-medium text-slate-100">Prabhu Shankar</p>
+              <p class="mt-1 text-xs text-slate-400">Data Scientist · United States</p>
+              <dl class="mt-4 space-y-2 text-xs text-slate-200">
+                <div class="flex items-center justify-between gap-4">
+                  <dt class="text-slate-400">Experience</dt>
+                  <dd class="font-medium text-indigo-300">4+ Years</dd>
+                </div>
+                <div class="flex items-center justify-between gap-4">
+                  <dt class="text-slate-400">Education</dt>
+                  <dd class="text-right text-slate-200">MS Data Analytics, Mercer</dd>
+                </div>
+                <div class="flex items-center justify-between gap-4">
+                  <dt class="text-slate-400">Prior</dt>
+                  <dd class="text-right text-slate-200">Goldman Sachs</dd>
+                </div>
+                <div class="flex items-center justify-between gap-4">
+                  <dt class="text-slate-400">Availability</dt>
+                  <dd class="font-medium text-indigo-300">Open to Roles</dd>
+                </div>
+              </dl>
+              <div class="mt-5 grid grid-cols-2 gap-2 text-[10px]">
+                <div class="rounded-2xl border border-slate-700 bg-slate-950/60 px-3 py-2">
+                  <p class="text-[10px] font-semibold text-slate-200">Experimentation</p>
+                  <p class="mt-1 text-[10px] text-slate-400">A/B testing & segmentation at scale.</p>
+                </div>
+                <div class="rounded-2xl border border-slate-700 bg-slate-950/60 px-3 py-2">
+                  <p class="text-[10px] font-semibold text-slate-200">GenAI</p>
+                  <p class="mt-1 text-[10px] text-slate-400">LLMs, RAG, LangChain pipelines.</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" data-section class="border-b border-slate-900/80 bg-slate-950 py-16 md:py-20">
+        <div class="mx-auto max-w-6xl px-4 lg:px-0">
+          <div class="grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,1.4fr)]">
+            <div>
+              <h2 class="text-xl font-semibold tracking-tight text-slate-50 sm:text-2xl">About Me</h2>
+              <p class="mt-4 text-sm leading-relaxed text-slate-300 sm:text-base">
+                I'm a Data Scientist with 4+ years of experience in marketing analytics, customer segmentation, A/B experimentation, and GenAI-powered pipelines. My background spans Goldman Sachs, Mercer University, and Data Engineering Academy — where I've built systems that help marketing and analytics teams move faster and make smarter decisions.
+              </p>
+              <p class="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
+                I specialize in connecting ML to business outcomes — whether that's cutting campaign analysis from 3 days to 6 hours, building LLM assistants that generate SQL in under 2 minutes, or designing experimentation frameworks that process billions of behavioral records.
+              </p>
+              <div class="mt-6 grid gap-4 text-sm sm:grid-cols-2">
+                <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-400">How I work</p>
+                  <ul class="mt-3 space-y-1.5 text-xs text-slate-300">
+                    <li>• Start with the campaign question, not the model.</li>
+                    <li>• Design experiments that actually measure what matters.</li>
+                    <li>• Build for analysts who need answers in hours, not days.</li>
+                  </ul>
+                </div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-sky-400">What I enjoy</p>
+                  <ul class="mt-3 space-y-1.5 text-xs text-slate-300">
+                    <li>• A/B testing and experimentation framework design.</li>
+                    <li>• GenAI and RAG pipelines for analytics use cases.</li>
+                    <li>• Customer segmentation and behavioral modeling at scale.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-4 rounded-3xl border border-slate-800 bg-slate-950/80 p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">At a Glance</p>
+              <dl class="space-y-3 text-sm text-slate-200">
+                <div class="flex items-start justify-between gap-4">
+                  <dt class="text-xs text-slate-400">Current focus</dt>
+                  <dd class="text-right text-xs text-slate-100">Remote & contract DS roles in marketing analytics, experimentation, and GenAI-powered systems.</dd>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                  <dt class="text-xs text-slate-400">Core strengths</dt>
+                  <dd class="text-right text-xs text-slate-100">A/B testing, customer segmentation, LLM pipelines, RAG, feature stores, Spark at scale.</dd>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                  <dt class="text-xs text-slate-400">Education</dt>
+                  <dd class="text-right text-xs text-slate-100">MS Data Analytics. Mercer University (May 2025). Top 5% at Big Data Health Competition.</dd>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                  <dt class="text-xs text-slate-400">Certifications</dt>
+                  <dd class="text-right text-xs text-slate-100">dbt · Alteryx Designer · Databricks Fundamentals · Lean Six Sigma</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" data-section class="border-b border-slate-900/80 bg-slate-950 py-16 md:py-20">
+        <div class="mx-auto max-w-6xl px-4 lg:px-0">
+          <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-semibold tracking-tight text-slate-50 sm:text-2xl">Technical Skills</h2>
+              <p class="mt-2 max-w-xl text-sm text-slate-300">Marketing analytics, experimentation, GenAI pipelines, and cloud-scale ML — end to end.</p>
+            </div>
+            <p class="text-[11px] text-slate-400">Core stack: <span class="text-slate-200">Python · SQL · Scikit-learn · Spark · Snowflake · Airflow · LangChain</span></p>
+          </div>
+
+          <div class="mt-8 grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1.1fr)]">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Core pillars</p>
+              <h3 class="mt-2 text-sm font-semibold text-slate-100 sm:text-base">Experimentation • GenAI • Marketing Analytics</h3>
+              <div class="mt-5 flex flex-wrap gap-2.5 text-xs">
+                <button type="button" data-pillar="experimentation" class="rounded-full border border-indigo-500 bg-indigo-500/10 px-3 py-1.5 text-xs font-medium text-indigo-300 shadow-[0_0_0_1px_rgba(99,102,241,0.6)] transition focus-visible:outline-none">Experimentation</button>
+                <button type="button" data-pillar="genai" class="rounded-full border border-slate-700 bg-slate-900/60 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:border-indigo-500/70 hover:text-indigo-300 focus-visible:outline-none">GenAI</button>
+                <button type="button" data-pillar="analytics" class="rounded-full border border-slate-700 bg-slate-900/60 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:border-indigo-500/70 hover:text-indigo-300 focus-visible:outline-none">Analytics</button>
+              </div>
+              <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400">How I use it</p>
+                <h3 id="pillarTitle" class="mt-3 text-sm font-semibold text-indigo-300">Experimentation</h3>
+                <p id="pillarBody" class="mt-2 text-xs leading-relaxed text-slate-300">Designing and automating A/B testing pipelines using Python, Airflow, and Snowflake — measuring campaign and product outcomes across multi-million marketing datasets with statistical rigor and fast turnaround.</p>
+                <ul id="pillarList" class="mt-3 space-y-1.5 text-xs text-slate-300">
+                  <li>• Reduce experiment turnaround from 48 hours to 5 hours.</li>
+                  <li>• Build feature stores supporting segmentation across billions of records.</li>
+                  <li>• Detect conversion trends 10 hours faster using distributed Spark environments.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="space-y-4 rounded-3xl border border-slate-800 bg-slate-950/80 p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Skill areas</p>
+              <div class="grid gap-3 sm:grid-cols-2">
+
+                <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                  <button type="button" data-accordion-btn class="flex w-full items-center justify-between text-left text-xs font-semibold text-slate-100">
+                    <span>Languages</span>
+                    <span data-accordion-icon class="ml-2 text-[10px] text-slate-400 transition-transform duration-200 rotate-180">▾</span>
+                  </button>
+                  <div class="mt-3 space-y-1.5 text-[11px] text-slate-300" data-accordion-content>
+                    <p>• Python (NumPy, Scikit-learn, XGBoost, TensorFlow, Matplotlib, Plotly)</p>
+                    <p>• SQL · R · Shell Script</p>
+                  </div>
+                </div>
+
+                <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                  <button type="button" data-accordion-btn class="flex w-full items-center justify-between text-left text-xs font-semibold text-slate-100">
+                    <span>ML & GenAI</span>
+                    <span data-accordion-icon class="ml-2 text-[10px] text-slate-400 transition-transform duration-200">▾</span>
+                  </button>
+                  <div class="mt-3 hidden space-y-1.5 text-[11px] text-slate-300" data-accordion-content>
+                    <p>• Scikit-learn · XGBoost · TensorFlow · NLP</p>
+                    <p>• OpenAI API · LangChain · RAG · Vector Embeddings</p>
+                    <p>• A/B Testing · Feature Stores · Customer Segmentation</p>
+                    <p>• KubeFlow · Airflow · dbt · Airbyte</p>
+                  </div>
+                </div>
+
+                <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                  <button type="button" data-accordion-btn class="flex w-full items-center justify-between text-left text-xs font-semibold text-slate-100">
+                    <span>Cloud & Data Platforms</span>
+                    <span data-accordion-icon class="ml-2 text-[10px] text-slate-400 transition-transform duration-200">▾</span>
+                  </button>
+                  <div class="mt-3 hidden space-y-1.5 text-[11px] text-slate-300" data-accordion-content>
+                    <p>• AWS (S3, EC2, Lambda, Redshift, Athena, Glue, IAM)</p>
+                    <p>• Azure Data Lake · Azure Data Factory · GCP BigQuery</p>
+                    <p>• Databricks · Snowflake · Hadoop · MongoDB · DynamoDB</p>
+                  </div>
+                </div>
+
+                <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                  <button type="button" data-accordion-btn class="flex w-full items-center justify-between text-left text-xs font-semibold text-slate-100">
+                    <span>DevOps & Analytics</span>
+                    <span data-accordion-icon class="ml-2 text-[10px] text-slate-400 transition-transform duration-200">▾</span>
+                  </button>
+                  <div class="mt-3 hidden space-y-1.5 text-[11px] text-slate-300" data-accordion-content>
+                    <p>• Docker · Terraform · Jenkins · Git · GitHub Actions</p>
+                    <p>• Tableau · Power BI · QuickSight · Grafana · Splunk</p>
+                    <p>• Jira · Confluence · Stakeholder Management · Technical Demos</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" data-section class="border-b border-slate-900/80 bg-slate-950 py-16 md:py-20">
+        <div class="mx-auto max-w-6xl px-4 lg:px-0">
+          <h2 class="text-xl font-semibold tracking-tight text-slate-50 sm:text-2xl">Work Experience</h2>
+          <p class="mt-2 max-w-2xl text-sm text-slate-300">4+ years across marketing analytics, experimentation, GenAI, and customer segmentation at Goldman Sachs and beyond.</p>
+
+          <div class="mt-8 space-y-5">
+
+            <!-- DEA -->
+            <article class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-5 transition hover:border-indigo-500/70 hover:shadow-lg hover:shadow-indigo-500/10">
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <h3 class="text-sm font-semibold text-slate-50">Data Scientist</h3>
+                  <p class="mt-0.5 text-xs font-medium text-indigo-300">Data Engineering Academy · Atlanta, GA</p>
+                </div>
+                <span class="rounded-full border border-slate-700 bg-slate-900 px-2.5 py-1 text-[10px] text-slate-400">Jul 2025 – Present</span>
+              </div>
+              <ul class="mt-4 space-y-2 text-xs text-slate-300">
+                <li>• Designed scalable <span class="text-slate-100">experimentation frameworks using Python, SQL, and Spark</span> to evaluate advanced customer segmentation and targeting models, reducing campaign analysis cycles from <span class="text-indigo-300 font-medium">3 days to 6 hours</span> across multi-million datasets.</li>
+                <li>• Built predictive customer response models using <span class="text-slate-100">Scikit-learn and Pandas</span>, engineering behavioral features that saved analysts <span class="text-indigo-300 font-medium">8 hours weekly</span> in manual segmentation and performance reporting.</li>
+                <li>• Developed automated <span class="text-slate-100">A/B testing pipelines using Python, Airflow, and Snowflake</span>, reducing experiment analysis turnaround from <span class="text-indigo-300 font-medium">48 hours to 5 hours</span> while improving data reliability.</li>
+                <li>• Designed a scalable <span class="text-slate-100">marketing analytics data warehouse on Snowflake and Redshift</span>, improving dashboard refresh cycles from <span class="text-indigo-300 font-medium">90 minutes to 20 minutes</span> for analytics stakeholders.</li>
+              </ul>
+            </article>
+
+            <!-- Mercer -->
+            <article class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-5 transition hover:border-indigo-500/70 hover:shadow-lg hover:shadow-indigo-500/10">
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <h3 class="text-sm font-semibold text-slate-50">Research Assistant</h3>
+                  <p class="mt-0.5 text-xs font-medium text-indigo-300">Mercer University · Atlanta, GA</p>
+                </div>
+                <span class="rounded-full border border-slate-700 bg-slate-900 px-2.5 py-1 text-[10px] text-slate-400">Aug 2024 – May 2025</span>
+              </div>
+              <ul class="mt-4 space-y-2 text-xs text-slate-300">
+                <li>• Implemented end-to-end <span class="text-slate-100">ML pipelines on AWS using Spark and Python</span> to train and deploy user engagement scoring models, reducing campaign optimization time from <span class="text-indigo-300 font-medium">2 days to 3 hours</span>.</li>
+                <li>• Built scalable <span class="text-slate-100">SQL data models and feature stores</span> supporting experimentation frameworks, enabling data scientists to generate insights across billions of records while saving <span class="text-indigo-300 font-medium">12 hours weekly</span> in feature preparation.</li>
+                <li>• Engineered a distributed <span class="text-slate-100">experimentation analysis environment using Databricks and Spark</span>, enabling marketing analytics teams to detect customer conversion trends <span class="text-indigo-300 font-medium">10 hours faster</span> per campaign cycle.</li>
+              </ul>
+            </article>
+
+            <!-- Goldman Sachs -->
+            <article class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-5 transition hover:border-indigo-500/70 hover:shadow-lg hover:shadow-indigo-500/10">
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <h3 class="text-sm font-semibold text-slate-50">Senior Data Analyst / Data Analyst</h3>
+                  <p class="mt-0.5 text-xs font-medium text-indigo-300">Goldman Sachs · Bengaluru, India</p>
+                </div>
+                <span class="rounded-full border border-slate-700 bg-slate-900 px-2.5 py-1 text-[10px] text-slate-400">May 2021 – Dec 2023</span>
+              </div>
+              <ul class="mt-4 space-y-2 text-xs text-slate-300">
+                <li>• Integrated <span class="text-slate-100">vector embeddings and semantic search pipelines</span> for customer behavior datasets, enabling analysts to retrieve relevant marketing segments <span class="text-indigo-300 font-medium">10 minutes faster</span> per query.</li>
+                <li>• Built <span class="text-slate-100">generative AI assistants using Python and LLM APIs</span> to automate marketing data exploration, enabling analysts to generate segmentation insights and SQL queries in under <span class="text-indigo-300 font-medium">2 minutes</span> instead of 25.</li>
+                <li>• Implemented <span class="text-slate-100">RAG-based analytics copilots using LangChain-style orchestration</span> and vector databases to answer stakeholder questions from internal campaign datasets, reducing analyst support workloads by <span class="text-indigo-300 font-medium">6 hours weekly</span>.</li>
+                <li>• Developed advanced <span class="text-slate-100">customer profiling models using Python and Scikit-learn</span>, enabling segmentation strategies that reduced campaign targeting preparation from <span class="text-indigo-300 font-medium">1 day to 2 hours</span>.</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" data-section class="border-b border-slate-900/80 bg-slate-950 py-16 md:py-20">
+        <div class="mx-auto max-w-6xl px-4 lg:px-0">
+          <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-semibold tracking-tight text-slate-50 sm:text-2xl">Projects</h2>
+              <p class="mt-2 max-w-2xl text-sm text-slate-300">Applied ML and analytics projects with measurable real-world outcomes.</p>
+            </div>
+          </div>
+
+          <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+            <article class="group flex flex-col rounded-2xl border border-slate-800 bg-slate-900/70 p-4 transition hover:border-indigo-500/70 hover:shadow-lg hover:shadow-indigo-500/15">
+              <div class="mb-2 flex items-center justify-between gap-2">
+                <h3 class="text-sm font-semibold text-slate-50">Medicaid Drug Cost Forecasting</h3>
+                <span class="rounded-full border border-indigo-500/50 bg-indigo-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-indigo-300">ML</span>
+              </div>
+              <p class="flex-1 text-xs leading-relaxed text-slate-300">Built propensity and segmentation models for client outreach prioritization, reducing analysis time from 2 days to 4 hours and expanding targeted account coverage from 120 to 260 with measurable lift tracking.</p>
+              <p class="mt-3 text-[11px] text-slate-400">Stack: Python · XGBoost · Tableau</p>
+              <button type="button" data-project-open data-project-key="medicaid" class="mt-3 inline-flex items-center gap-1 text-[11px] font-medium text-indigo-300 transition hover:text-indigo-200">View details <span class="text-[10px]">→</span></button>
+            </article>
+
+            <article class="group flex flex-col rounded-2xl border border-slate-800 bg-slate-900/70 p-4 transition hover:border-indigo-500/70 hover:shadow-lg hover:shadow-indigo-500/15">
+              <div class="mb-2 flex items-center justify-between gap-2">
+                <h3 class="text-sm font-semibold text-slate-50">Enhancing Safety in Mercer Walk-Only Zones</h3>
+                <span class="rounded-full border border-sky-500/50 bg-sky-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-sky-300">CV / ML</span>
+              </div>
+              <p class="flex-1 text-xs leading-relaxed text-slate-300">Implemented automated QA checks, drift diagnostics, and alerting for scoring pipelines, improving issue detection from 3 days to 1 day and reducing break-fix incidents from 14 per month to 5.</p>
+              <p class="mt-3 text-[11px] text-slate-400">Stack: Python · Computer Vision · ML</p>
+              <button type="button" data-project-open data-project-key="safety" class="mt-3 inline-flex items-center gap-1 text-[11px] font-medium text-indigo-300 transition hover:text-indigo-200">View details <span class="text-[10px]">→</span></button>
+            </article>
+
+            <article class="group flex flex-col rounded-2xl border border-slate-800 bg-slate-900/70 p-4 transition hover:border-indigo-500/70 hover:shadow-lg hover:shadow-indigo-500/15">
+              <div class="mb-2 flex items-center justify-between gap-2">
+                <h3 class="text-sm font-semibold text-slate-50">RAG Analytics Copilot</h3>
+                <span class="rounded-full border border-purple-500/50 bg-purple-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-purple-200">GenAI</span>
+              </div>
+              <p class="flex-1 text-xs leading-relaxed text-slate-300">Built LLM-powered assistants and RAG-based copilots using LangChain orchestration and vector databases, enabling analysts to generate SQL queries and segmentation insights in under 2 minutes instead of 25.</p>
+              <p class="mt-3 text-[11px] text-slate-400">Stack: Python · LangChain · OpenAI API · Vector DB</p>
+              <button type="button" data-project-open data-project-key="rag" class="mt-3 inline-flex items-center gap-1 text-[11px] font-medium text-indigo-300 transition hover:text-indigo-200">View details <span class="text-[10px]">→</span></button>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" data-section class="bg-slate-950 py-16 md:py-20">
+        <div class="mx-auto max-w-6xl px-4 lg:px-0">
+          <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-semibold tracking-tight text-slate-50 sm:text-2xl">Let's Connect</h2>
+              <p class="mt-2 max-w-xl text-sm text-slate-300">Open to remote and contract data science roles — especially marketing analytics, A/B experimentation, GenAI pipelines, and customer segmentation work.</p>
+            </div>
+          </div>
+          <div class="mt-8 grid gap-8 md:grid-cols-2">
+            <div class="space-y-5 rounded-3xl border border-slate-800 bg-slate-950/80 p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Contact</p>
+              <p class="text-sm text-slate-200">Let's build something impactful together.</p>
+              <dl class="mt-4 space-y-3 text-sm">
+                <div class="flex items-center gap-3">
+                  <dt class="w-20 text-xs text-slate-400">Email</dt>
+                  <dd><a href="mailto:prabhu.shankar.ps05@gmail.com" class="text-xs font-medium text-indigo-300 underline-offset-4 hover:underline">prabhu.shankar.ps05@gmail.com</a></dd>
+                </div>
+                <div class="flex items-center gap-3">
+                  <dt class="w-20 text-xs text-slate-400">Phone</dt>
+                  <dd><a href="tel:6787940166" class="text-xs font-medium text-slate-200 underline-offset-4 hover:underline">678-794-0166</a></dd>
+                </div>
+                <div class="flex items-center gap-3">
+                  <dt class="w-20 text-xs text-slate-400">LinkedIn</dt>
+                  <dd><a href="https://linkedin.com/in/prabhushankar-ps" target="_blank" rel="noreferrer" class="text-xs font-medium text-sky-300 underline-offset-4 hover:underline">linkedin.com/in/prabhushankar-ps</a></dd>
+                </div>
+                <div class="flex items-center gap-3">
+                  <dt class="w-20 text-xs text-slate-400">GitHub</dt>
+                  <dd><a href="https://github.com/prabhushankar-ps" target="_blank" rel="noreferrer" class="text-xs font-medium text-sky-300 underline-offset-4 hover:underline">github.com/prabhushankar-ps</a></dd>
+                </div>
+                <div class="flex items-center gap-3">
+                  <dt class="w-20 text-xs text-slate-400">Tableau</dt>
+                  <dd><a href="https://public.tableau.com/app/profile/prabhu.shankar.shankar/vizzes" target="_blank" rel="noreferrer" class="text-xs font-medium text-sky-300 underline-offset-4 hover:underline">https://public.tableau.com/app/profile/prabhu.shankar.shankar/vizzes</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="rounded-3xl border border-slate-800 bg-slate-950/80 p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Quick message</p>
+              <p class="mt-2 text-xs text-slate-300">Send me a note. I'll get back to you soon.</p>
+              <div class="mt-4 space-y-4">
+                <div>
+                  <label for="name" class="block text-xs font-medium text-slate-200">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-xs text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" />
+                </div>
+                <div>
+                  <label for="email" class="block text-xs font-medium text-slate-200">Email</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-xs text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" />
+                </div>
+                <div>
+                  <label for="message" class="block text-xs font-medium text-slate-200">Message</label>
+                  <textarea id="message" name="message" rows="4" placeholder="What would you like to work on?" class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-xs text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"></textarea>
+                </div>
+                <button id="submitBtn" type="button" class="inline-flex items-center justify-center rounded-xl bg-indigo-500 px-4 py-2 text-xs font-semibold text-white shadow-lg shadow-indigo-500/40 transition hover:bg-indigo-400">Send me a message</button>
+                <p id="formStatus" class="text-[11px] text-indigo-300 opacity-0 transition-opacity duration-200"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-900/80 bg-slate-950 py-6">
+      <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 text-[11px] text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-0">
+        <p>&copy; <span id="year"></span> Prabhu Shankar. All rights reserved.</p>
+        <p>Built with HTML, Tailwind CSS, and vanilla JavaScript.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Back to top -->
+  <button id="toTopBtn" type="button" class="fixed bottom-5 right-5 z-40 inline-flex h-9 w-9 items-center justify-center rounded-full border border-indigo-500/60 bg-indigo-500/10 text-[12px] font-semibold text-indigo-300 shadow-lg transition hover:bg-indigo-500/20 hover:text-indigo-50 opacity-0 pointer-events-none" aria-label="Back to top">↑</button>
+
+  <!-- Project modal -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 px-4 backdrop-blur-sm" aria-hidden="true">
+    <div class="relative w-full max-w-lg rounded-2xl border border-slate-800 bg-slate-950/90 p-5 shadow-xl">
+      <button id="modalClose" type="button" class="absolute right-3 top-3 text-lg text-slate-400 transition hover:text-slate-100" aria-label="Close">&times;</button>
+      <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-indigo-400">Project detail</p>
+      <h3 id="modalTitle" class="mt-2 text-lg font-semibold text-slate-50"></h3>
+      <p id="modalTagline" class="mt-1 text-xs text-slate-400"></p>
+      <p id="modalBody" class="mt-3 text-sm leading-relaxed text-slate-200"></p>
+      <ul id="modalBullets" class="mt-3 space-y-1.5 text-xs text-slate-300"></ul>
+      <p id="modalStack" class="mt-3 text-[11px] text-slate-400"></p>
+    </div>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Smooth scrolling
+      var scrollLinks = document.querySelectorAll('[data-scroll]');
+      scrollLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          var href = link.getAttribute('href');
+          if (!href || href.charAt(0) !== '#') return;
+          var target = document.getElementById(href.slice(1));
+          if (!target) return;
+          event.preventDefault();
+          window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+          if (link.closest('#mobileNav')) document.getElementById('mobileNav').classList.add('hidden');
+        });
+      });
+
+      // Mobile nav
+      var toggle = document.getElementById('mobileNavToggle');
+      var mobileNav = document.getElementById('mobileNav');
+      if (toggle && mobileNav) toggle.addEventListener('click', function () { mobileNav.classList.toggle('hidden'); });
+
+      // Scrollspy
+      var sections = document.querySelectorAll('[data-section]');
+      var navLinks = document.querySelectorAll('[data-nav-link]');
+      function updateNav() {
+        var fromTop = window.scrollY + 160;
+        var cur = '';
+        sections.forEach(function (s) { if (fromTop >= s.offsetTop && fromTop < s.offsetTop + s.offsetHeight) cur = s.id; });
+        if (!cur) return;
+        navLinks.forEach(function (l) {
+          var id = (l.getAttribute('href') || '').replace('#', '');
+          l.classList.toggle('text-indigo-400', id === cur);
+          l.classList.toggle('text-slate-300', id !== cur);
+        });
+      }
+      window.addEventListener('scroll', updateNav);
+      updateNav();
+
+      // Typewriter
+      var roleEl = document.getElementById('roleTyping');
+      if (roleEl) {
+        var roles = ['Marketing Analyst', 'GenAI Engineer', 'Experimentation Scientist'];
+        var ri = 0, ci = 0, del = false;
+        function type() {
+          var cur = roles[ri];
+          if (del) { ci--; } else { ci++; }
+          roleEl.textContent = cur.substring(0, ci);
+          if (!del && ci === cur.length) { del = true; setTimeout(type, 1100); return; }
+          if (del && ci === 0) { del = false; ri = (ri + 1) % roles.length; setTimeout(type, 400); return; }
+          setTimeout(type, del ? 45 : 80);
+        }
+        type();
+      }
+
+      // Pillar switcher
+      var pillarData = {
+        experimentation: {
+          title: 'Experimentation',
+          body: 'Designing and automating A/B testing pipelines using Python, Airflow, and Snowflake — measuring campaign and product outcomes across multi-million marketing datasets with statistical rigor and fast turnaround.',
+          bullets: ['Reduce experiment turnaround from 48 hours to 5 hours.', 'Build feature stores supporting segmentation across billions of records.', 'Detect conversion trends 10 hours faster using distributed Spark environments.']
+        },
+        genai: {
+          title: 'GenAI',
+          body: 'Building LLM-powered assistants, RAG-based copilots, and vector search pipelines using OpenAI API and LangChain-style orchestration to automate data exploration and analyst workflows.',
+          bullets: ['Generate SQL queries and segmentation insights in under 2 minutes.', 'Reduce analyst support workloads by 6 hours weekly with RAG copilots.', 'Integrate vector embeddings for semantic search across campaign datasets.']
+        },
+        analytics: {
+          title: 'Analytics',
+          body: 'Turning marketing data and model outputs into executive-trusted dashboards and storytelling visualizations using Tableau, QuickSight, Grafana, and Power BI.',
+          bullets: ['Improve dashboard refresh cycles from 90 minutes to 20 minutes.', 'Design marketing analytics data warehouses on Snowflake and Redshift.', 'Deliver segmentation insights that reduce campaign prep from 1 day to 2 hours.']
+        }
+      };
+      var pillarBtns = document.querySelectorAll('[data-pillar]');
+      var pTitle = document.getElementById('pillarTitle');
+      var pBody = document.getElementById('pillarBody');
+      var pList = document.getElementById('pillarList');
+      function setPillar(k) {
+        var d = pillarData[k]; if (!d) return;
+        pTitle.textContent = d.title; pBody.textContent = d.body;
+        pList.innerHTML = '';
+        d.bullets.forEach(function (b) { var li = document.createElement('li'); li.textContent = '• ' + b; li.className = 'text-xs text-slate-300'; pList.appendChild(li); });
+      }
+      pillarBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setPillar(btn.getAttribute('data-pillar'));
+          pillarBtns.forEach(function (b) { b.classList.remove('border-indigo-500','bg-indigo-500/10','text-indigo-300','shadow-[0_0_0_1px_rgba(99,102,241,0.6)]'); b.classList.add('border-slate-700','text-slate-300'); });
+          btn.classList.remove('border-slate-700','text-slate-300'); btn.classList.add('border-indigo-500','bg-indigo-500/10','text-indigo-300','shadow-[0_0_0_1px_rgba(99,102,241,0.6)]');
+        });
+      });
+      setPillar('experimentation');
+
+      // Accordion
+      document.querySelectorAll('[data-accordion-btn]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var content = btn.nextElementSibling;
+          var icon = btn.querySelector('[data-accordion-icon]');
+          var open = !content.classList.contains('hidden');
+          content.classList.toggle('hidden', open);
+          if (icon) icon.classList.toggle('rotate-180', !open);
+        });
+      });
+
+      // Project modal
+      var projectData = {
+        medicaid: {
+          title: 'Medicaid Drug Cost Forecasting',
+          tagline: 'Propensity and segmentation models for healthcare outreach prioritization.',
+          body: 'Built end-to-end ML models using XGBoost and Python to forecast Medicaid drug costs and prioritize client outreach, reducing analysis time and significantly expanding targeted account coverage.',
+          bullets: ['Reduced analysis time from 2 days to 4 hours.', 'Expanded targeted account coverage from 120 to 260.', 'Visualized outcomes with Tableau dashboards for stakeholder review.'],
+          stack: 'Tech stack: Python, XGBoost, Tableau.'
+        },
+        safety: {
+          title: 'Enhancing Safety in Mercer Walk-Only Zones',
+          tagline: 'Computer vision and ML for pedestrian safety detection.',
+          body: 'Applied computer vision and ML techniques to detect and monitor safety incidents in campus walk-only zones, implementing automated QA checks and alerting pipelines to reduce manual intervention and detection lag.',
+          bullets: ['Improved issue detection from 3 days to 1 day.', 'Reduced break-fix incidents from 14 per month to 5.', 'Automated alerting pipeline reduced manual monitoring overhead.'],
+          stack: 'Tech stack: Python, Computer Vision, ML.'
+        },
+        rag: {
+          title: 'RAG Analytics Copilot',
+          tagline: 'LLM-powered assistant for marketing data exploration at Goldman Sachs.',
+          body: 'Built generative AI assistants and RAG-based copilots using LangChain-style orchestration and vector databases to help analysts explore marketing datasets, generate SQL, and surface segmentation insights on demand.',
+          bullets: ['Reduced query generation time from 25 minutes to under 2 minutes.', 'Cut analyst support workloads by 6 hours weekly.', 'Integrated vector embeddings for semantic retrieval of marketing segments.'],
+          stack: 'Tech stack: Python, LangChain, OpenAI API, Vector DB.'
+        }
+      };
+      var modal = document.getElementById('projectModal');
+      var modalClose = document.getElementById('modalClose');
+      document.querySelectorAll('[data-project-open]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var d = projectData[btn.getAttribute('data-project-key')]; if (!d) return;
+          document.getElementById('modalTitle').textContent = d.title;
+          document.getElementById('modalTagline').textContent = d.tagline;
+          document.getElementById('modalBody').textContent = d.body;
+          var ul = document.getElementById('modalBullets'); ul.innerHTML = '';
+          d.bullets.forEach(function (b) { var li = document.createElement('li'); li.textContent = '• ' + b; li.className = 'text-xs text-slate-300'; ul.appendChild(li); });
+          document.getElementById('modalStack').textContent = d.stack;
+          modal.classList.remove('hidden'); modal.classList.add('flex'); document.body.classList.add('overflow-hidden');
+        });
+      });
+      function closeModal() { modal.classList.add('hidden'); modal.classList.remove('flex'); document.body.classList.remove('overflow-hidden'); }
+      modalClose.addEventListener('click', closeModal);
+      modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+
+      // Back to top
+      var toTopBtn = document.getElementById('toTopBtn');
+      window.addEventListener('scroll', function () {
+        toTopBtn.classList.toggle('opacity-0', window.scrollY <= 400);
+        toTopBtn.classList.toggle('pointer-events-none', window.scrollY <= 400);
+      });
+      toTopBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+      // Contact form (demo)
+      document.getElementById('submitBtn').addEventListener('click', async function () {
+          var name = document.getElementById('name').value.trim() || 'there';
+          var email = document.getElementById('email').value.trim();
+          var message = document.getElementById('message').value.trim();
+          var status = document.getElementById('formStatus');
+      
+          if (!email || !message) {
+              status.textContent = 'Please fill in all fields.';
+              status.classList.remove('opacity-0'); status.classList.add('opacity-100');
+              return;
+          }
+      
+          var btn = document.getElementById('submitBtn');
+          btn.textContent = 'Sending...'; btn.disabled = true;
+      
+          const response = await fetch('https://formspree.io/f/xlgovqde', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ name, email, message })
+          });
+      
+          if (response.ok) {
+              status.textContent = 'Thanks, ' + name + '! Your message was sent.';
+              document.getElementById('name').value = '';
+              document.getElementById('email').value = '';
+              document.getElementById('message').value = '';
+          } else {
+              status.textContent = 'Something went wrong. Please try again.';
+          }
+      
+          status.classList.remove('opacity-0'); status.classL
